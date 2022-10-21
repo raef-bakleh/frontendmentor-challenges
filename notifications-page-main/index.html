@@ -1,51 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Notifications page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Notifications page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="notification">
+          <strong>Notifications</strong><span id="num">3</span>
+        </div>
+        <div id="mark" >Mark all as read</div>
+      </div>
+      <div class="feed">
+        <div class="new">
+          <div class="first">
+            <div class="pic">
+              <img
+                src="assets/images/avatar-mark-webber.webp"
+                alt="mark"
+                style="width: 40px"
+              />
+            </div>
+            <div>
+              <span id="name">Mark Webber</span>
+              <span id="grey">reacted to your recent post</span>
+              <span id="greyp">My first tournament today!</span>
+              <span class="dot"></span><br />
+              1m ago
+            </div>
+          </div>
 
-  Notifications 3
-
-  Mark all as read
-
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
-
-  Angela Gray followed you
-  5m ago
-
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <div class="first">
+            <div>
+              <img
+                src="assets/images/avatar-angela-gray.webp"
+                alt="angela"
+                style="width: 40px"
+              />
+            </div>
+            <div>
+              <span id="name">Angela Gray</span>
+              <span id="grey"> followed you</span> <span class="dot"></span>
+              <br />
+              5m ago
+            </div>
+          </div>
+          <div class="first">
+            <div>
+              <img
+                src="assets/images/avatar-jacob-thompson.webp"
+                alt="Jacob"
+                style="width: 40px"
+              />
+            </div>
+            <div>
+              <span id="name">Jacob Thompson</span>
+              <span id="grey">joined your group</span>
+              <span id="blue">Chess Club</span> <span class="dot"></span> <br />
+              1 day ago
+            </div>
+          </div>
+        </div>
+        <div class="message">
+          <div class="middle">
+            <img
+              src="assets/images/avatar-rizky-hasanuddin.webp"
+              alt="riszky"
+              style="width: 40px"
+            />
+            <div>
+              <span id="name">Rizky Hasanuddin</span
+              ><span id="grey">
+                sent you a private message<br />5 days ago</span
+              >
+            </div>
+          </div>
+          <div id="greybox" style="">
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </div>
+        </div>
+        <div class="new" style="margin-top: 130px">
+          <div
+            class="first"
+            style="background-color: white; justify-content: space-between"
+          >
+            <div style="display: flex">
+              <div>
+                <img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly" />
+              </div>
+              <div>
+                <span id="name">Kimberly</span>
+                <span id="grey"
+                  >commented on your picture <br />1 week ago</span
+                >
+              </div>
+            </div>
+            <div>
+              <img src="assets/images/image-chess.webp" alt="chess"/>
+            </div>
+          </div>
+          <div class="first" style="background-color: white">
+            <div>
+              <img
+                src="assets/images/avatar-nathan-peterson.webp"
+                alt="nathan"
+              />
+            </div>
+            <div>
+              <span id="name">Nathan Peterson</span>
+              <span id="grey">reacted to your recent post</span>
+              <span id="greyp"
+                >5 end-game stratgies to increase your win rate</span
+              >
+            </div>
+          </div>
+          <div class="first" style="background-color: white">
+            <div>
+              <img src="assets/images/avatar-anna-kim.webp" alt="anna" />
+            </div>
+            <div>
+              <span id="name">Anna Kim </span
+              ><span id="grey">left the group</span
+              ><span id="blue"> Chess Club</span
+              ><span id="grey"><br />2 weeks ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
+<!-- <div
+            id="grey"
+            style="
+              width: 550px;
+              margin-left: 50px;
+              padding: 10px;
+              margin-top: 10px;
+              border: solid rgba(128, 128, 128, 0.614);
+              border-radius: 12px;
+            "
+          >
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </div> -->
