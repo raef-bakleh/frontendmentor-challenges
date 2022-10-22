@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>sing-up for our 30-day trial. No credit card required</p>
+    </div>
+    <div class="container">
+      <div class="top">
+        <div
+        id="views"
+          style="
+            letter-spacing: 1px;
+            color: hsl(225, 20%, 60%);
+            font-size: 15px;
+            font-weight: 600;
+          "
+        >
+          75K PAGEVIEWS
+        </div>
+        <div id="price" style="display: flex; align-items: center">
+          <span
+            id="dollar"
+            style="
+              font-size: 40px;
+              letter-spacing: 1px;
+              color: hsl(227, 35%, 25%);
+            "
+            >$25</span
+          ><span
+            id="month"
+            style="color: hsl(225, 20%, 60%); padding-left: 5px"
+          >
+            / month</span
+          >
+        </div>
+      </div>
+      <div class="slider">
+        <input  type="range" name="range" id="slide" min="5" max="50" step="1" >
+      </div>
+      <div class="billing" style="color: hsl(225, 20%, 60%);">
+        <span style="margin-bottom: 2px;">Monthly Billing</span>
+        <div class="check">
+        <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+        </div>
+        <span style="margin-bottom: 2px;">Yearly Billing </span>
+        <span style="color: hsl(15, 100%, 70%); background-color:hsl(14, 92%, 95%); border-radius: 12px; width:90px; padding: 2px; padding-top: 1px;">25% discount</span></div>
+        <div class="line"></div>
+      <div class="bottom">
+        <div class="props">
+          <div class="features"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.94 1"/></svg>
+            <span>unlimnted websites</span> </div>
+          <div class="features"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+            <span >100% data ownershirp</span> </div>
+          <div class="features" ><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+            <span>Email reports</span> </div>
+        </div>
+        <div class="start">
+           <span>Start my trial</span>
+        </div>
+      </div>      
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
