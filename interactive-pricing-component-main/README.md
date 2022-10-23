@@ -1,3 +1,5 @@
+Live Demo : https://interactive-pricing-com.netlify.app/
+
 # Frontend Mentor - Interactive pricing component
 
 ![Design preview for the Interactive pricing component coding challenge](./design/desktop-preview.jpg)
