@@ -91,6 +91,9 @@ h1{
 #reset:hover{
     background-color:hsl(172, 67%, 45%) ;
 }
+#reset:active{
+    transform:  rotatey(10deg);
+}
 .calculator{
     width: 360px;
     height: 410px;
@@ -178,8 +181,14 @@ img{
     align-items: center;
     font-size: 23px;
     border-radius: 7px;
+    width: 100px;
+    outline: none;
+    border: none;
+    text-align: center;
 
-
+}
+input[id="grid-Custom"]::placeholder{
+    font-size: 23px;
 }
 
 .changeColor{
